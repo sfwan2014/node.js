@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script src="http://www.w3school.com.cn/jquery/jquery-1.11.1.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("p.p1").click(function(){
+					$(this).css("color","#89fc23");
+				});
+				
+				$("p.p2").mouseover(function(){
+					$(this).css("color","#fefe21");
+				});
+				$("p.p2").mouseout(function(){
+					$(this).css("color","#2efe21");
+				});
+				
+				$("p.p3").focus(function(){
+					$(this).css("color","#2efe21");
+				});
+				
+				$("#pic").click(function(){
+//					window.location="http://www.baidu.com";
+					$(this).css("width","200px");
+				});
+			});
+			 
+		</script>
+		<title></title>
+	</head>
+	<body>
+	<p class="p1">如果您点击我,我会消失</p>
+	<p class="p2">如果您点击我,我会消</p>
+	<p class="p3">如果您点击我,我会</p>
+	<img id="pic" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=85e2a70509f3d7ca0ca36c3694228a3b/aa64034f78f0f736b203ac3a0f55b319ebc4130f.jpg"/>
+	</body>
+</html>

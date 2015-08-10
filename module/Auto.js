@@ -1,0 +1,3 @@
+function Auto():Car{
+
+};
